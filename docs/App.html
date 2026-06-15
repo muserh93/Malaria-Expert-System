@@ -1,1 +1,93 @@
+package malaria;
 
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+/**
+ * JavaFX GUI for Malaria Expert System.
+ */
+public class App extends Application {
+
+    @Override
+    public void start(Stage stage) {
+
+        CheckBox fever = new CheckBox("Fever");
+        CheckBox headache = new CheckBox("Headache");
+        CheckBox chills = new CheckBox("Chills");
+        CheckBox fatigue = new CheckBox("Fatigue");
+        CheckBox nausea = new CheckBox("Nausea");
+        CheckBox sweating = new CheckBox("Sweating");
+
+        Button diagnoseBtn = new Button("Diagnose");
+
+        Label result = new Label();
+
+        diagnoseBtn.setOnAction(e -> {
+
+            int score = 0;
+
+            if (fever.isSelected()) score++;
+            if (headache.isSelected()) score++;
+            if (chills.isSelected()) score++;
+            if (fatigue.isSelected()) score++;
+            if (nausea.isSelected()) score++;
+            if (sweating.isSelected()) score++;
+
+            try {
+
+                UserInputValidator.validate(score);
+
+                DiagnosisEngine engine =
+                    new DiagnosisEngine();
+
+                result.setText(
+                    engine.diagnose(score)
+                );
+
+            } catch (IllegalArgumentException ex) {
+
+                Alert alert = new Alert(
+                    Alert.AlertType.ERROR
+                );
+
+                alert.setHeaderText("Input Error");
+                alert.setContentText(
+                    ex.getMessage()
+                );
+
+                alert.showAndWait();
+            }
+        });
+
+        VBox root = new VBox(
+            10,
+            new Label("Select Symptoms"),
+            fever,
+            headache,
+            chills,
+            fatigue,
+            nausea,
+            sweating,
+            diagnoseBtn,
+            result
+        );
+
+        root.setPadding(
+            new Insets(20)
+        );
+
+        Scene scene =
+            new Scene(root, 400, 350);
+
+        stage.setTitle(
+            "Malaria Expert System"
+        );
+
+        stage.setScene(scene);
+        stage.show();
+    }
+}
