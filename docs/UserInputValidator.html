@@ -1,1 +1,23 @@
 
+package malaria;
+
+/**
+ * Validates user inputs.
+ */
+public class UserInputValidator {
+
+    /**
+     * Validates checkbox selections.
+     *
+     * @param count number of selected symptoms
+     * @throws IllegalArgumentException if no symptom is selected
+     */
+    public static void validate(int count) {
+
+        if (count == 0) {
+            throw new IllegalArgumentException(
+                "Please select at least one symptom."
+            );
+        }
+    }
+}
