@@ -19,17 +19,17 @@ Group Information
 
 Group 7
 
-S/N| Name| Registration Number
-1| Anas Kurashiyyu| CIS/STE/23/1067
-2| Ahmad Nasir| CIS/STE/23/1069
-3| Muhammad Aliyu Ahmad| CIS/STE/23/1071
-4| Sadiq Hamza Abbas| CIS/STE/23/1072
-5| Abdulsalam Maru Muhammad| CIS/STE/23/1073
-6| Sulaiman Usman| CIS/STE/23/1074
-7| Musa Hassan Musa| CIS/STE/23/1075
-8| Abubakar Sadiq Ahmad| CIS/STE/23/1076
-9| Abubakar Turare Muhammed| CIS/STE/23/1077
-10| Group Member| CIS/STE/23/1078
+S/N| Name.                 |RegistrationNumber
+ 1| Anas Kurashiyyu.        | CIS/STE/23/1067
+ 2| Ahmad Nasir.            | CIS/STE/23/1069
+ 3| Muhammad Aliyu Ahmad.   | CIS/STE/23/1071
+ 4| Sadiq Hamza Abbas.      | CIS/STE/23/1072
+ 5| Abdulsalam Maru Muhammad| CIS/STE/23/1073
+ 6| Sulaiman Usman.         | CIS/STE/23/1074
+ 7| Musa Hassan Musa.       | CIS/STE/23/1075
+ 8| Abubakar Sadiq Ahmad.   | CIS/STE/23/1076
+ 9| Abubakar Turare Muhammed| CIS/STE/23/1077
+10| Umar Mikha'il. Idris    | CIS/STE/23/1078
 
 ---
 
