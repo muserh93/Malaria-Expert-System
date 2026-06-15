@@ -39,7 +39,7 @@ Group Information
 
 ---
 
-Features
+##### Features
 
 Feature| Description
 JavaFX GUI| Provides a graphical user interface for users to interact with the system
@@ -51,7 +51,7 @@ Modular Design| Organized into separate classes with specific responsibilities
 
 ---
 
-Symptoms Used
+##### Symptoms Used
 
 Symptom No.| Symptom
 1| Fever
@@ -63,7 +63,7 @@ Symptom No.| Symptom
 
 ---
 
-System Diagnosis Rules
+###### System Diagnosis Rules
 
 Symptom Score| Diagnosis
 5 - 6| High Possibility of Malaria
@@ -72,7 +72,7 @@ Symptom Score| Diagnosis
 
 ---
 
-Project Structure
+### Project Structure
 
 Malaria-Expert-System/
 │
@@ -88,13 +88,13 @@ Malaria-Expert-System/
 ├── LICENSE
 └── .gitignore
 
-Requirements
+###### Requirements
 
 - Java JDK 17 or higher
 - JavaFX SDK
 - Visual Studio Code
 
-Running the Application
+###### Running the Application
 
 1. Clone the repository.
 2. Open the project in Visual Studio Code.
@@ -102,7 +102,7 @@ Running the Application
 4. Run "Main.java".
 5. Select symptoms and click Diagnose.
 
-Documentation
+###### Documentation
 
 Generate JavaDoc using:
 
