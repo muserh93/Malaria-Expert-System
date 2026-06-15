@@ -1,1 +1,26 @@
+package malaria;
 
+/**
+ * Handles malaria diagnosis logic.
+ */
+public class DiagnosisEngine {
+
+    /**
+     * Diagnoses malaria based on symptom score.
+     *
+     * @param score symptom score
+     * @return diagnosis result
+     */
+    public String diagnose(int score) {
+
+        assert score >= 0 : "Score cannot be negative";
+
+        if (score >= 5) {
+            return "High possibility of Malaria. Please visit a hospital.";
+        } else if (score >= 3) {
+            return "Moderate possibility of Malaria.";
+        } else {
+            return "Low possibility of Malaria.";
+        }
+    }
+}
